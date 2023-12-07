@@ -13,7 +13,7 @@ if match:
     price = match.group(1)
     print("Nothing phone 2 price " + price)
 else:
-    print("Price element not found.")
+    print("papa.")
 driver.quit()
 
 
