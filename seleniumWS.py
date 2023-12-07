@@ -9,7 +9,7 @@ while True:
     rendered_html = driver.page_source
     soup = BeautifulSoup(rendered_html, 'html.parser')
 
-    tag_list = soup.select('a.tag')
+    tag_list = driver.find_elements(By.CSS_SELECTOR, 'a.tag')#soup.select('a.tag')
     for tag in tag_list:
         print(tag.text)
     try:
@@ -18,4 +18,4 @@ while True:
     except:
         break
 
-driver.quit()
+
