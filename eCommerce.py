@@ -11,9 +11,9 @@ price_pattern = re.compile(r'<div class="_30jeq3 _1_WHN1">(.*?)</div>')
 match = price_pattern.search(pageSource)
 if match:
     price = match.group(1)
-    print("Nothing phone 2 price " + price)
+    print("Nothing phone 2 price sda  " + price)
 else:
-    print("Price element not found.")
+    print("Price element not found asdas .")
 driver.quit()
 
 
